@@ -45,7 +45,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python3 -m unittest pawnshop_test.py
+          python3 -m unittest test.py
         env:
           CI: true  
       
