@@ -9,7 +9,7 @@ terraform {
 
 # Configure the AWS provider
 provider "aws" {
-  region     = "us-west-1"
+  region     = "eu-central-1"
 }
 
 variable "REPOSITORY_URI" {
@@ -37,7 +37,7 @@ resource "aws_lightsail_container_service_deployment_version" "flask_app_deploym
   container {
     container_name = "flask-application"
 
-    image = "377439654610.dkr.ecr.us-west-1.amazonaws.com/flask_app_repository"
+    image = "377439654610.dkr.ecr.eu-central-1.amazonaws.com/flask_app_repository2"
 
     ports = {
       # Consistent with the port exposed by the Dockerfile and app.py
